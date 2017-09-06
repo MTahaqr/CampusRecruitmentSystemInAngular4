@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<p>
+  all-stud works!
+</p>-->
+<div class='container'>
+
+<table class="table table-hover" >
+  <h2><b>Applied Students</b></h2>
+  <tr>
+    <th>Name</th>
+    <th>CGPA</th>
+    <th>Program</th>
+    <th>Semester</th>
+    <th>Phone</th>
+  </tr>
+  <tr *ngFor="let s of stud let i=index" >
+    <td>{{s.Name}} </td> <td>{{s.CGPA}}</td>  <td>{{s.Program}}</td>  <td>{{s.Semester}}</td>  <td>{{s.Phone}}</td>
+  </tr>
+</table>
+</div>

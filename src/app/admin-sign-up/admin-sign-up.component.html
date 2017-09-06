@@ -1,0 +1,13 @@
+<div class="main">
+<div class="form-group">
+  <h3><b>SignUp</b></h3>
+  <label for="eml">Email:</label>
+  <input [(ngModel)]=adminSignUpForm.Email type="Email" class="form-control" id="eml">
+
+      <label for="pwd">Password:</label>
+  <input [(ngModel)]=adminSignUpForm.Password type="password" class="form-control" id="pwd">
+</div>
+
+ <button type="button" class="btn btn-success" (click)="signUp()" >Login</button>
+
+</div>

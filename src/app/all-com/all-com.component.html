@@ -1,0 +1,14 @@
+<div class='container'>
+<h2><b>Companies</b></h2>
+<table class="table table-hover" >
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th *ngIf=userType>For Admin</th>
+ </tr>
+  <tr *ngFor="let com of allComArray let i=index" >
+    <td>{{com.Name}} </td> <td>{{com.Email}}</td><td *ngIf=userType><button (click)='delCom(i)' type="button" class="btn btn-danger">Delete</button></td>
+  </tr>
+</table>
+</div>
+

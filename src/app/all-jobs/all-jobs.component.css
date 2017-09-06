@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+    width: 450px;
+    margin-left: 200px;
+
+}
+.td2{
+    
+    margin-left: 7px;
+    margin-right: 15px;
+    float: right;
+}
+.li2{
+    width: 570px;
+}
+
+.li1{
+    width: 670px;
+    /*margin-left: 50px;*/
+}
+.ul1{
+    width: 700px;
+    margin-left: 100px;
+    text-align: left;
+}
+h2{
+    /*float: left;*/
+    /*margin-left: 100px;
+    margin-bottom: 200px;*/
+}

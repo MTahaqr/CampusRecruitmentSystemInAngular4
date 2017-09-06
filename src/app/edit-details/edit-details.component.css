@@ -1,0 +1,11 @@
+
+.container{
+    /*text-align: center;*/
+    width: 500px;
+    margin-left: 300px;
+    /*margin-top: 20px;*/
+
+}
+button{
+    float: right;
+}

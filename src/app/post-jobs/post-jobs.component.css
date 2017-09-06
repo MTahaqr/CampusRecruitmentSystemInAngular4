@@ -1,0 +1,15 @@
+
+
+.container{
+    /*text-align: center;*/
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 50px;
+
+}
+button{
+    float: right;
+}
+.pbtn{
+    margin-top: 10px;
+}

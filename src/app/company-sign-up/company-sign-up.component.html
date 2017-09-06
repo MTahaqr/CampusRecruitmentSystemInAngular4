@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="main">
+<div class="form-group">
+  <h3><b>SignUp</b></h3>
+  <label for="name">Name:</label>
+  <input [(ngModel)]=signUpForm.Name type="Email" class="form-control" id="name">
+
+  <label for="eml">Email:</label>
+  <input [(ngModel)]=signUpForm.Email type="Email" class="form-control" id="eml">
+
+      <label for="pwd">Password:</label>
+  <input [(ngModel)]=signUpForm.Password type="password" class="form-control" id="pwd">
+</div>
+
+ <button type="button" class="btn btn-success" (click)="SignUp()" >SignUp</button>
+</div>

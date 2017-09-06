@@ -1,0 +1,72 @@
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+<div class="container">
+  
+  <br>
+  <ul  class="list-group list-group-item ul1" >
+    <h2><b>Jobs</b></h2>
+    <li *ngFor="let job of curUserJob let i=index" class="list-group-item li1">
+        <ul class="list-group">
+          <table>
+            <tr>
+              <td>
+          <li class="list-group-item li2">
+            <b>Job Title :</b> {{job.title}}
+          </li>
+              </td>
+              <td>
+                <!--<button type="button"  (click)='applyStudents(i)' class="btn btn-success">Applied Students</button>-->
+                <button class="btn btn-lg btn-outline-success" (click)="open(content);applyStudents(i)">Applied Students</button>
+              </td>
+          </tr>
+          <tr>
+        <li class="list-group-item li2">
+          <b>Salary :</b>{{job.salary}}            
+          </li>
+          </tr>
+          <tr>
+        <li class="list-group-item li2">
+         <b>Description :</b> {{job.description}}        
+          </li>
+          </tr>
+          </table>
+        </ul>
+        
+   </li>
+  </ul>
+  
+</div>
+
+  <ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table class="table table-hover" >
+  <h2><b>Applied Students</b></h2>
+  <tr>
+    <th>Name</th>
+    <th>CGPA</th>
+    <th>Program</th>
+    <th>Semester</th>
+    <th>Phone</th>
+  </tr>
+  <tr *ngFor="let stud of applyStudList let i=index" >
+    <td>{{stud.Name}} </td> <td>{{stud.CGPA}}</td>  <td>{{stud.Program}}</td>  <td>{{stud.Semester}}</td>  <td>{{stud.Phone}}</td>
+  </tr>
+</table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<!--<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>-->
+
+<hr>
+
+
+
+

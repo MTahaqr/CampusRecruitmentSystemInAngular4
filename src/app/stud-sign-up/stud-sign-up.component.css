@@ -1,0 +1,10 @@
+.main{
+    width: 500px;
+    /*text-align: center;*/
+    margin-left:  400px;
+    margin-top: 120px;
+    
+}
+button{
+    float: right;
+}

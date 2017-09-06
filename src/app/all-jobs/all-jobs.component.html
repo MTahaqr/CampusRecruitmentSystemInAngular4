@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div>
+ <!--<ul>
+   <li *ngFor="let job of jobsArray">
+     <ul>
+       <li>
+         <b>Job Title</b> {{job.title}}
+       </li>
+       <li>
+          <b>Salary</b>{{job.salary}}
+       </li>
+       <li>
+         <b>Description</b> {{job.description}}
+       </li>
+     </ul>
+   </li>
+   <p>===========================================================</p>
+ </ul>
+</div>-->
+
+<div class="container">
+  
+  <br>
+  <ul  class="list-group list-group-item ul1" >
+    <h2><b>Jobs</b></h2>
+    <li *ngFor="let job of jobsArray let i=index" class="list-group-item li1">
+        <ul class="list-group">
+          <table>
+            <tr>
+              <td>
+          <li class="list-group-item li2">
+            <b>Job Title :</b> {{job.title}}
+          </li>
+              </td>
+              <td  class='td2'>
+           <button *ngIf=forAdmin (click)='toRemove(i)'   type="button" class="btn btn-danger">Delete</button>
+           <button *ngIf=forStud (click)='toApply(i);applyjob(i)' type="button" class="btn btn-success">Apply</button>
+                
+              </td>
+          </tr>
+          <tr>
+        <li class="list-group-item li2">
+          <b>Salary :</b>{{job.salary}}            
+          </li>
+          </tr>
+          <tr>
+        <li class="list-group-item li2">
+         <b>Description :</b> {{job.description}}        
+          </li>
+          </tr>
+          </table>
+        </ul>
+        
+   </li>
+  </ul>
+</div>

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+  <div >
+    <h2>Post Job</h2>
+  <label for="eml">Job Title:</label>
+  <input type="text" [(ngModel)]=jobDetForm.title class="form-control" id="eml">
+
+  <label for="pwd">Salary:</label>
+  <input  type=text [(ngModel)]=jobDetForm.salary class="form-control" id="pwd">
+
+  <label for="pwd">Job Description:</label>
+  <input  type="text" [(ngModel)]=jobDetForm.description class="form-control" id="pwd">
+</div>
+
+ <button type="button" class="btn btn-success pbtn" (click)="postJob()">post</button>
+ </div>
+
+ 

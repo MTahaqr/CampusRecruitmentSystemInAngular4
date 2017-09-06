@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--<div class='main'>
+<a routerLink="EditDetailsComponent">Edit Details</a><br>
+<a routerLink="AllJobsComponent">View All Jobs</a><br>
+<a>All Companies</a>
+<button type="button" class="btn btn-danger"  (click)="logOut()">LogOut</button>
+</div>-->
+
+
+
+
+
+<div class="container main">
+  <h2>Students</h2>
+  <div class="list-group">
+    <img class="list-group-item"  src="http://www.edutrics.com/main/images/student_user.png">
+    <a routerLink="EditDetailsComponent" class="list-group-item active">Edit Details</a>
+    <a routerLink="AllJobsComponent" class="list-group-item">View All Jobs</a>
+    <a routerLink='AllComComponent'  class="list-group-item">Companies</a>
+    <a  class="list-group-item"><button type="button" class="btn btn-danger"  (click)="logOut()">LogOut</button></a>
+  </div>
+</div>
+<br>
+<div>
+<router-outlet></router-outlet>
+</div>

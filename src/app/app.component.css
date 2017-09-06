@@ -1,0 +1,29 @@
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+li{
+  list-style: none;
+}
+button{
+    margin-left: 150px;
+    float: right;
+}
+img{
+  width: 250px;
+}
+.content{
+  text-align: center;
+}
+h3, .imgs{
+  display: inline;
+  
+}
+.imgs{
+  width: 10px;
+  border:1px solid black;
+}
+.contDiv{
+  margin-left: 280px;
+}
+img,h3{
+  cursor: pointer;
+}
